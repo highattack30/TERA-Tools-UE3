@@ -1,0 +1,32 @@
+
+class UObject
+{
+public:
+	 struct FPointer        VfTableObject;				//0x0 (0x04)
+	 int                    ObjectInternalInteger;			//0x4 (0x04)
+	 struct FQWord          ObjectFlags;				//0x8 (0x08)
+	 struct FPointer        HashNext;				//0x10 (0x04)
+	 struct FPointer        HashOuterNext;				//0x14 (0x04)
+	 int                    NetIndex;				//0x18 (0x04)
+	 class UObject*         Linker;					//0x1C (0x04)
+	 struct FPointer        LinkerIndex;				//0x20 (0x04)
+	 struct FPointer        StateFrame;				//0x24 (0x04)
+	 class UObject*         Outer;					//0x28 (0x04)
+	 struct FName           Name;					//0x2C (0x08)
+	 class UClass*          Class;					//0x34 (0x04)
+	 class UObject*         ObjectArchetype;			//0x38 (0x04)
+
+}
+
+class UField : public UObject
+{
+public:
+	 class UField*		Next;					//0x3C (0x04)
+
+}
+
+UProperty:
+	- PropertyOffset	0x64
+
+UStruct:
+	- PropertySize		0x50

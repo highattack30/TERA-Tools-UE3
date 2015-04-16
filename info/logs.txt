@@ -1,0 +1,15 @@
+hello and welcome to Domo's scan tool logs tool enabled
+successfully created directories
+
+start pattern scan
+GetModuleInfo
+lpBaseOfDll: 0x400000
+SizeOfImage: 0x265E000
+
+void GetOffsetPositions()
+GObjObjects->Num: 141728
+void ObjectDump()
+GObjObjects->Num: 141728
+void NameDump()
+Names->Num: 79064
+tool completed
